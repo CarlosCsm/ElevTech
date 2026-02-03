@@ -1,0 +1,80 @@
+body {
+  width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+  background-image: url('elevador1.jpg');
+  background-image: 
+  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+  url('elevador1.jpg');
+  background-size: cover;
+
+
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;     /* Centraliza verticalmente */
+  min-height: 100vh;       /* Garante que o corpo tenha a altura total da tela */
+  background-color: #f0f0f0;
+  
+
+}
+
+
+main h1  {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  text-align: center;
+  padding: 13px 0;
+  margin-top: 3px;
+  font-weight:lighter;
+  
+}
+
+p{
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  text-align: center;
+  padding: 8px 0;
+  margin-top: 3px;
+  font-weight:lighter;
+ 
+}
+
+.btn-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* Espaço entre o ícone e o texto */
+  padding: 10px 20px;
+  background-color: #575757; /* Cor  */
+  color: white;
+  text-decoration: none; /* Remove o sublinhado */
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  position: fixed; /* Fixa o elemento em relação à tela */
+  top: 20px;       /* Distância do topo */
+  right: 20px;      /* Distância da esquerda */
+  z-index: 1000;   /* Garante que ele fique acima de outros elementos */
+}
+
+figure {
+  display:block;
+  align-items:end;
+  padding: 20px 20px;
+  background-color: #575757; /* Cor  */
+  border-radius: 3px;
+  margin-left: 80px;   /* Empurra para a direita */
+  
+}
+
+/* Estilo da Moldura e Lista */
+.moldura-moderna {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px); /* Efeito de vidro moderno */
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 900px;
+    margin: 40px auto;
+}

@@ -1,0 +1,109 @@
+body {
+  width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+  background-image: url('elevador1.jpg');
+  background-image: 
+  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+  url('elevador1.jpg');
+  background-size: cover;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 50px 20px;
+  font-family: 'Segoe UI', sans-serif;
+ 
+}
+
+.pricing-card {
+  background: rgba(255, 255, 255, 0.639);
+  border-radius: 10px;
+  padding: 30px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  position: relative;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Destaque para o plano do meio */
+.pricing-card.featured {
+  border: 2px solid #575757;
+  transform: scale(1.05);
+}
+
+.pricing-card.featured:hover {
+  transform: scale(1.05) translateY(-10px);
+}
+
+.badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #575757;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.price {
+  font-size: 32px;
+  font-weight: bold;
+  color: #575757;
+  margin: 20px 0;
+}
+
+.price span {
+  font-size: 16px;
+  color: #7f8c8d;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+ul li {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.btn-plan {
+  display: block;
+  background: #575757;
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* Espaço entre o ícone e o texto */
+  padding: 10px 20px;
+  background-color: #575757; /* Cor  */
+  color: white;
+  text-decoration: none; /* Remove o sublinhado */
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  position: fixed; /* Fixa o elemento em relação à tela */
+  top: 20px;       /* Distância do topo */
+  right: 15px;      /* Distância da esquerda */
+  z-index: 1000;   /* Garante que ele fique acima de outros elementos */
+}

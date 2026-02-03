@@ -1,0 +1,133 @@
+body {
+  width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+  background-image: url('elevador1.jpg');
+  background-image: 
+  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+  url('elevador1.jpg');
+  background-size: cover;
+}
+
+
+header h1 {
+  background: #575757cc;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  text-align: center;
+  padding: 3px;
+  border-bottom: 10px solid #474646cc;
+  margin-top: 3px;
+  font-weight:lighter;
+}
+
+
+header figure {
+  display:flex; 
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+
+nav {
+  float: left;
+  width: 140px;
+  margin-right: 15PX;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  border-top:1px solid #ffffff ;
+  padding: 0;
+  margin: 0;
+  width: 100%; 
+}
+  
+
+nav li {
+  border-bottom: 2px solid #ffffff;
+  padding: 11px 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+nav a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight:lighter;
+  padding-left: 10px;
+  display: block;
+  padding: 25px 30px; 
+  display: block;     
+  width: 100%;      
+  box-sizing: border-box; 
+  transition: 0.3s;
+}
+
+
+nav a:hover {
+    background-color: #575757cc; 
+    padding-left: 30px;       
+}
+
+
+main {
+  float: left;
+  width: 490px;
+ 
+}
+
+main h1 {
+  font-size: 34px;
+  margin-bottom: 0;
+  font-weight:lighter;
+  color: #ffffff;
+  
+}
+
+main p {
+  text-align:left;
+  color:#ffffff
+  
+}
+
+main p:first-of-type{
+    width: 250px;
+    font-weight: lighter;
+}
+
+main img {
+  float : left;
+  margin: 0 10px;
+}
+
+aside {
+  float: left;
+  width: 140px;
+  margin-left: 15px;
+}
+
+footer {
+  clear: both;
+  margin-top: 30px;
+  background: #575757cc;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 3px;
+  border-top: 8px solid #474646cc;
+  font-weight:lighter;
+  
+}
+
+
+
+
+
+

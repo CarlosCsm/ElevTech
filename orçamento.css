@@ -1,0 +1,77 @@
+body {
+  width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+  background-image: url('elevador1.jpg');
+  background-image: 
+  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+  url('elevador1.jpg');
+  background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.form-container {
+    background: #575757;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h2 { color: #ffffff; margin-bottom: 10px; }
+
+.group { margin-bottom: 15px; }
+
+label { display: block; margin-bottom: 5px; font-weight: bold; color: #ffffff; }
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que o padding não quebre a largura */
+}
+
+.btn-enviar {
+    background-color: #28a745;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #218838;
+    
+}
+
+.btn-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* Espaço entre o ícone e o texto */
+  padding: 10px 20px;
+  background-color: #575757; /* Cor  */
+  color: white;
+  text-decoration: none; /* Remove o sublinhado */
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  position: fixed; /* Fixa o elemento em relação à tela */
+  top: 20px;       /* Distância do topo */
+  right: 20px;      /* Distância da esquerda */
+  z-index: 1000;   /* Garante que ele fique acima de outros elementos */
+}
+
+P {
+    color: #ffffff;
+}

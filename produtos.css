@@ -1,0 +1,49 @@
+body {
+  width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+  background-image: url('elevador1.jpg');
+  background-image: 
+  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+  url('elevador1.jpg');
+  background-size: cover;
+}
+
+h2{
+  color: #ffffff;
+}
+
+.btn-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* Espaço entre o ícone e o texto */
+  padding: 10px 20px;
+  background-color: #575757; /* Cor */
+  color: white;
+  text-decoration: none; /* Remove o sublinhado */
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  position: fixed; /* Fixa o elemento em relação à tela BOTAO */
+  top: 20px;       /* Distância do topo */
+  right: 20px;      /* Distância da esquerda */
+  z-index: 1000;   /* Garante que ele fique acima de outros elementos */
+}
+
+
+.btn-plan {
+
+   display: inline-flex;
+  align-items: center;
+  gap: 8px; /* Espaço entre o ícone e o texto */
+  padding: 10px 20px;
+  background-color: #575757; /* Cor */
+  color: white;
+  text-decoration: none; /* Remove o sublinhado */
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  
+
+}

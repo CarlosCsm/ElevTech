@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Solicitação de Orçamento</title>
+    <link rel="stylesheet" href="orçamento.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Solicitar Orçamento</h2>
+        <p>Preencha os campos abaixo e entraremos em contato em breve.</p>
+
+        <form action="index.html" method="POST">
+            
+            <div class="group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Ex: João Silva" required>
+            </div>
+
+            <div class="group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="email@exemplo.com" required>
+            </div>
+
+            <div class="group">
+                <label for="servico">Escolha o tipo de Equipamento</label>
+                <select id="servico" name="servico">
+                    <option value="Elevador">Elevador</option>
+                    <option value="Plataforma">Plataforma</option>
+                    <option value="MontaCarga">MontaCarga</option>
+                </select>
+            </div>
+
+            <div class="group">
+                <label for="prazo">Prazo Desejado</label>
+                <input type="date" id="prazo" name="prazo">
+            </div>
+
+            <div class="group">
+                <label for="mensagem">Descrição do Projeto</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva detalhes do que você precisa..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">Enviar Orçamento
+            </button>
+            
+        </form>
+    </div>
+   
+     <a href="index.html" class="btn-home">
+        
+    <i class="fa-solid fa-house"></i> Inicio
+    </a>
+    
+</body>
+</html>

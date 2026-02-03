@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="produtos.css">
+</head>
+<body>
+ <title>Galeria de Elevadores</title>
+    <style>
+        
+        /* Estilo para organizar as fotos lado a lado */
+        .galeria {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Estilo da Moldura */
+        .moldura {
+            border: 10px solid #ffffff6c; /* Moldura branca */
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2); /* Sombra suave */
+            background-color: #ffffff92;
+            padding: 5px;
+            text-align: center;
+            max-width: 300px;
+        }
+
+        /* Tamanho das imagens */
+        .moldura img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover; /* Não deixa a imagem esticar */
+        }
+
+        /* Estilo da Legenda */
+        .legenda {
+            margin-top: 10px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            color: #333;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+
+    <h2 style="text-align:center; font-family:Arial;">Serviços Especializados</h2>
+
+    <div class="galeria">
+        
+        <figure class="moldura">
+            <img src="elevador.jpg" alt="Elevador moderno com LED">
+            <a href="index.html" class="btn-plan">Escolher</a>
+            <figcaption class="legenda">Manutenção Preventiva</figcaption>
+        </figure>
+        
+        <figure class="moldura">
+            <img src="elevador2.png" alt="Elevador moderno com LED">
+            <a href="index.html" class="btn-plan">Escolher</a>
+            <figcaption class="legenda">Modernização Estética</figcaption>
+        </figure>
+
+        <figure class="moldura">
+            <img src="montacarga.jpg" alt="Elevador de carga industrial">
+            <a href="index.html" class="btn-plan">Escolher</a>
+            <figcaption class="legenda">Elevadores de Carga</figcaption>
+        </figure>
+
+    <a href="index.html" class="btn-home">
+    <i class="fa-solid fa-house"></i> Inicio
+    </a>
+    </div>
+
+</body>
+</html>
+
+
+    
