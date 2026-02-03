@@ -1,3 +1,5 @@
+/* --- SEUS COMANDOS ORIGINAIS --- */
+
 body {
   width: 1250px;
   margin-left: auto;
@@ -9,17 +11,13 @@ body {
   url('elevador1.jpg');
   background-size: cover;
 
-
   margin: 0;
   display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center;     /* Centraliza verticalmente */
-  min-height: 100vh;       /* Garante que o corpo tenha a altura total da tela */
+  justify-content: center; 
+  align-items: center;     
+  min-height: 100vh;       
   background-color: #f0f0f0;
-  
-
 }
-
 
 main h1  {
   color: rgb(255, 255, 255);
@@ -28,57 +26,82 @@ main h1  {
   padding: 13px 0;
   margin-top: 3px;
   font-weight:lighter;
-  
 }
 
-p{
+p {
   color: rgb(255, 255, 255);
   font-size: 30px;
   text-align: center;
   padding: 8px 0;
   margin-top: 3px;
   font-weight:lighter;
- 
 }
 
 .btn-home {
   display: inline-flex;
   align-items: center;
-  gap: 8px; /* Espaço entre o ícone e o texto */
+  gap: 8px; 
   padding: 10px 20px;
-  background-color: #575757; /* Cor  */
+  background-color: #575757; 
   color: white;
-  text-decoration: none; /* Remove o sublinhado */
+  text-decoration: none; 
   font-family: Arial, sans-serif;
   font-weight: bold;
   border-radius: 5px;
-  position: fixed; /* Fixa o elemento em relação à tela */
-  top: 20px;       /* Distância do topo */
-  right: 20px;      /* Distância da esquerda */
-  z-index: 1000;   /* Garante que ele fique acima de outros elementos */
+  position: fixed; 
+  top: 20px;       
+  right: 20px;      
+  z-index: 1000;   
 }
 
 figure {
   display:block;
   align-items:end;
   padding: 20px 20px;
-  background-color: #575757; /* Cor  */
+  background-color: #575757; 
   border-radius: 3px;
-  margin-left: 80px;   /* Empurra para a direita */
-  
+  margin-left: 80px;   
 }
 
-/* Estilo da Moldura e Lista */
 .moldura-moderna {
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px); /* Efeito de vidro moderno */
+    backdrop-filter: blur(10px); 
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 20px;
     padding: 40px;
     max-width: 900px;
     margin: 40px auto;
-
 }
 
+/* --- ADAPTAÇÕES PARA CELULAR (Media Query) --- */
 
+@media (max-width: 1250px) {
+  body {
+    width: 100%;           /* Remove os 1250px fixos */
+    min-height: auto;      /* Permite que a tela cresça se o conteúdo for longo */
+    display: block;        /* Muda de flex para block para facilitar a rolagem */
+    padding: 60px 15px;    /* Espaço nas laterais e no topo (por causa do botão fixo) */
+  }
 
+  .moldura-moderna {
+    width: auto;           /* Faz a moldura se ajustar à largura do celular */
+    padding: 20px;         /* Reduz o respiro interno para ganhar espaço */
+    margin: 20px 0;        /* Ajusta margem externa */
+  }
+
+  figure {
+    margin-left: 0;        /* Remove o recuo de 80px que empurraria a imagem para fora da tela */
+    text-align: center;    /* Centraliza a imagem no mobile */
+  }
+
+  main h1, p {
+    font-size: 22px;       /* Diminui um pouco o texto para não quebrar muitas linhas */
+  }
+
+  .btn-home {
+    padding: 8px 15px;     /* Botão um pouco menor para não ocupar muito espaço */
+    font-size: 14px;
+    right: 10px;           /* Mais próximo da borda */
+    top: 10px;
+  }
+}
