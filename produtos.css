@@ -1,3 +1,5 @@
+/* --- SEUS COMANDOS ORIGINAIS --- */
+
 body {
   width: 1250px;
   margin-left: auto;
@@ -17,33 +19,60 @@ h2{
 .btn-home {
   display: inline-flex;
   align-items: center;
-  gap: 8px; /* Espaço entre o ícone e o texto */
+  gap: 8px; 
   padding: 10px 20px;
-  background-color: #575757; /* Cor */
+  background-color: #575757; 
   color: white;
-  text-decoration: none; /* Remove o sublinhado */
+  text-decoration: none; 
   font-family: Arial, sans-serif;
   font-weight: bold;
   border-radius: 5px;
-  position: fixed; /* Fixa o elemento em relação à tela BOTAO */
-  top: 20px;       /* Distância do topo */
-  right: 20px;      /* Distância da esquerda */
-  z-index: 1000;   /* Garante que ele fique acima de outros elementos */
+  position: fixed; 
+  top: 20px;       
+  right: 20px;      
+  z-index: 1000;   
 }
 
-
 .btn-plan {
-
    display: inline-flex;
   align-items: center;
-  gap: 8px; /* Espaço entre o ícone e o texto */
+  gap: 8px; 
   padding: 10px 20px;
-  background-color: #575757; /* Cor */
+  background-color: #575757; 
   color: white;
-  text-decoration: none; /* Remove o sublinhado */
+  text-decoration: none; 
   font-family: Arial, sans-serif;
   font-weight: bold;
   border-radius: 5px;
-  
+}
 
+/* --- ADAPTAÇÕES PARA CELULAR --- */
+
+@media (max-width: 1250px) {
+  body {
+    width: 100%;       /* Libera a largura para telas menores */
+    padding: 20px;     /* Adiciona um respiro nas bordas */
+    box-sizing: border-box;
+    display: flex;     /* Ajuda a organizar o conteúdo centralizado no mobile */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  h2 {
+    margin-top: 80px;  /* Empurra o título para baixo para não bater no botão Home */
+    font-size: 24px;   /* Reduz levemente o tamanho em telas pequenas */
+  }
+
+  .btn-home {
+    top: 10px;         /* Move o botão um pouco mais para a quina */
+    right: 10px;
+    padding: 8px 15px; /* Diminui o tamanho do botão no celular */
+    font-size: 14px;
+  }
+
+  .btn-plan {
+    width: 80%;        /* Faz o botão de plano ficar mais fácil de clicar no celular */
+    justify-content: center; /* Centraliza o texto dentro do botão */
+  }
 }
