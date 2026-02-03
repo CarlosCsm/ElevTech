@@ -80,13 +80,5 @@ figure {
 
 }
 
-/* Estilo para Celular (Telas menores que 768px) */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column; /* Transforma colunas lada a lado em uma lista vertical */
-  }
-  
-  .menu {
-    display: none; /* Esconde o menu comum para usar um menu hambúrguer */
-  }
-}
+
+
