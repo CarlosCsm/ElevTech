@@ -1,21 +1,16 @@
+/* --- SEUS COMANDOS ORIGINAIS --- */
 
 body {
-  
   font-size: 25px;
-
   background-image: url('elevador1.jpg');
   background-image: 
   linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
   url('elevador1.jpg');
-  
 }
 
-
-
-/* Estilo da Moldura e Lista */
 .moldura-moderna {
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px); /* Efeito de vidro moderno */
+    backdrop-filter: blur(10px); 
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 20px;
     padding: 40px;
@@ -55,7 +50,7 @@ body {
 
 .sub-lista {
     margin-top: 10px;
-    font-size: 1rem !important; /* Tamanho menor para a sub-lista */
+    font-size: 1rem !important; 
     opacity: 0.9;
 }
 
@@ -75,17 +70,53 @@ ul li {
 .btn-home {
   display: inline-flex;
   align-items: center;
-  gap: 0px; /* Espaço entre o ícone e o texto */
+  gap: 0px; 
   padding: 10px 30px;
-  background-color: #575757; /* Cor */
+  background-color: #575757; 
   color: white;
-  text-decoration: none; /* Remove o sublinhado */
+  text-decoration: none; 
   font-family: Arial, sans-serif;
   font-weight: bold;
   border-radius: 5px;
-  position: fixed; /* Fixa o elemento em relação à tela BOTAO */
-  top: 20px;       /* Distância do topo */
-  right: 20px;      /* Distância da esquerda */
-  z-index: 1000;   /* Garante que ele fique acima de outros elementos */
+  position: fixed; 
+  top: 20px;       
+  right: 20px;      
+  z-index: 1000;   
   font-size: 15px;
+}
+
+/* --- ADAPTAÇÕES PARA DISPOSITIVOS MÓVEIS --- */
+
+@media (max-width: 768px) {
+  body {
+    font-size: 18px; /* Reduz o tamanho base da fonte para não ocupar a tela toda */
+  }
+
+  .moldura-moderna {
+    margin: 20px 10px; /* Reduz as margens externas */
+    padding: 20px;     /* Reduz o preenchimento interno */
+    backdrop-filter: blur(5px); /* Suaviza o blur para melhorar o desempenho no celular */
+  }
+
+  .card-servico {
+    flex-direction: column; /* Faz o ícone ficar em cima do texto */
+    align-items: center;    /* Centraliza o ícone e o texto */
+    text-align: center;     /* Centraliza a descrição */
+    gap: 10px;
+  }
+
+  .icone {
+    font-size: 50px; /* Aumenta um pouco o ícone para destaque centralizado */
+  }
+
+  .btn-home {
+    padding: 8px 15px;
+    top: 10px;
+    right: 10px;
+    font-size: 13px;
+  }
+
+  ul li {
+    font-size: 16px; /* Ajusta o tamanho da lista de serviços para o celular */
+  }
 }
